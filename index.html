@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="El Rincón Marino – Cevichería y mariscos en Huánuco. Tradición marina desde 1998." />
+  <meta name="author" content="NexvoraSystems" />
+  <title>El Rincón Marino – Cevichería Huanuqueña</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#inicio" class="nav-logo">El <span>Rincón</span> Marino</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+      <li><a href="#reservas">Reservas</a></li>
+    </ul>
+    <a href="#reservas" class="btn btn--primary nav-cta">Reservar Mesa</a>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+      <span class="tag">✦ Tradición Marina desde 1998</span>
+      <h1 class="hero__title">El sabor del mar<br><em>en tu mesa</em></h1>
+      <p class="hero__desc">
+        Ceviches, tiraditos y arroces preparados con el pescado más fresco de Huánuco,
+        siguiendo recetas que han pasado de generación en generación.
+      </p>
+      <div class="hero__btns">
+        <a href="#menu" class="btn btn--primary">Ver Carta</a>
+        <a href="#reservas" class="btn btn--outline">Reservar Mesa</a>
+      </div>
+    </div>
+
+    <!-- Badges de credibilidad flotantes -->
+    <div class="hero__badges">
+      <div class="hero__badge">
+        <div class="hero__badge-icon">🏆</div>
+        <div class="hero__badge-text">
+          <strong>25 años de tradición</strong>
+          <span>Familia Quispe desde 1998</span>
+        </div>
+      </div>
+      <div class="hero__badge">
+        <div class="hero__badge-icon">🐟</div>
+        <div class="hero__badge-text">
+          <strong>Pescado del día</strong>
+          <span>Traído desde Lima y Chimbote</span>
+        </div>
+      </div>
+      <div class="hero__badge">
+        <div class="hero__badge-icon">⭐</div>
+        <div class="hero__badge-text">
+          <strong>4.9 / 5 en Google</strong>
+          <span>+500 reseñas de clientes</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">Bajar</div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="about" id="nosotros">
+    <div class="about__img">
+      <!--
+        IMAGEN: reemplaza con img/about.jpg cuando tengas la foto real.
+        Tamaño recomendado: 800x600px
+      -->
+      <img
+        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=85&auto=format&fit=crop"
+        alt="Platos del Rincón Marino"
+      />
+      <div class="about__chip">
+        <span class="about__chip-num">25+</span>
+        <span class="about__chip-lbl">Años de historia</span>
+      </div>
+    </div>
+    <div class="about__text">
+      <span class="tag tag--light">✦ Nuestra Historia</span>
+      <h2 class="section-title">Más de 25 años llevando el <em>sabor marino</em> a Huánuco</h2>
+      <div class="divider"></div>
+      <p class="section-desc">
+        Fundados en 1998 por la familia Quispe, comenzamos con una pequeña carretilla
+        en el mercado central. Hoy somos el restaurante de mariscos de referencia en la
+        región, sin perder nunca la sazón casera que nos hizo famosos.
+      </p>
+      <p class="section-desc section-desc--mt">
+        Cada día madrugamos para seleccionar el mejor pescado y mariscos traídos
+        directamente desde Lima y Chimbote, garantizando frescura absoluta en cada
+        plato que preparamos.
+      </p>
+      <div class="about__stats">
+        <div class="stat">
+          <span class="stat__num">40+</span>
+          <span class="stat__label">Platos en carta</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">500+</span>
+          <span class="stat__label">Clientes al mes</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">4.9★</span>
+          <span class="stat__label">Valoración Google</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENÚ -->
+  <section class="menu" id="menu">
+    <div class="menu__header">
+      <span class="tag">✦ Nuestra Carta</span>
+      <h2 class="section-title">Lo mejor del <em>mar</em> en cada plato</h2>
+      <div class="divider divider--center"></div>
+      <p class="section-desc section-desc--center">
+        Ingredientes frescos, sazón auténtica y porciones generosas. Así es la cocina del Rincón Marino.
+      </p>
+    </div>
+
+    <div class="menu__tabs" role="tablist">
+      <button class="tab-btn tab-btn--active" role="tab" data-tab="ceviches">Ceviches</button>
+      <button class="tab-btn" role="tab" data-tab="arroces">Arroces</button>
+      <button class="tab-btn" role="tab" data-tab="sopas">Sopas</button>
+      <button class="tab-btn" role="tab" data-tab="bebidas">Bebidas</button>
+    </div>
+
+    <!-- Ceviches -->
+    <div class="menu__grid menu__grid--active" id="tab-ceviches" role="tabpanel">
+      <article class="menu-card">
+        <div class="menu-card__img-wrap">
+          <!-- IMAGEN LOCAL: img/ceviche-clasico.jpg -->
+          <img class="menu-card__img" src="img/ceviche-clasico.jpg" alt="Ceviche Clásico" />
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__name">Ceviche Clásico</h3>
+          <p class="menu-card__desc">Pescado fresco marinado en limón, ají limo, cebolla roja y cilantro. Servido con choclo y camote.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">S/ 22</span>
+            <span class="badge">★ Favorito</span>
+          </div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <div class="menu-card__img-wrap">
+          <img class="menu-card__img" src="img/ceviche-mixto.jpg" alt="Ceviche Mixto" />
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__name">Ceviche Mixto</h3>
+          <p class="menu-card__desc">Combinación de pescado, camarones, pulpo y conchas negras en nuestro leche de tigre especial.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">S/ 32</span>
+            <span class="badge">Chef</span>
+          </div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <div class="menu-card__img-wrap">
+          <img class="menu-card__img" src="img/tiradito.jpg" alt="Tiradito Nikkei" />
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__name">Tiradito Nikkei</h3>
+          <p class="menu-card__desc">Láminas de lenguado en salsa amarilla con toques de sillao y ajonjolí tostado.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">S/ 28</span>
+            <span class="badge">Nuevo</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Arroces -->
+    <div class="menu__grid" id="tab-arroces" role="tabpanel">
+      <article class="menu-card">
+        <div class="menu-card__img-wrap">
+          <img class="menu-card__img" src="img/arroz-mariscos.jpg" alt="Arroz con Mariscos" />
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__name">Arroz con Mariscos</h3>
+          <p class="menu-card__desc">Arroz cremoso con camarones, almejas, pulpo y mariscos salteados en salsa de ají amarillo.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">S/ 38</span>
+            <span class="badge">★ Favorito</span>
+          </div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <div class="menu-card__img-wrap">
+          <img class="menu-card__img" src="img/chaufa.jpg" alt="Chaufa de Mariscos" />
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__name">Chaufa de Mariscos</h3>
+          <p class="menu-card__desc">Arroz frito al wok con mariscos frescos, huevo, cebolla china y salsa de ostión.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">S/ 34</span>
+            <span class="badge">Chef</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Sopas -->
+    <div class="menu__grid" id="tab-sopas" role="tabpanel">
+      <article class="menu-card">
+        <div class="menu-card__img-wrap">
+          <img class="menu-card__img" src="img/chupe.jpg" alt="Chupe de Camarones" />
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__name">Chupe de Camarones</h3>
+          <p class="menu-card__desc">Sopa cremosa con camarones de río, leche, ají panca, papa amarilla y huevo pochado.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">S/ 30</span>
+            <span class="badge">★ Favorito</span>
+          </div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <div class="menu-card__img-wrap">
+          <img class="menu-card__img" src="img/parihuela.jpg" alt="Parihuela Especial" />
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__name">Parihuela Especial</h3>
+          <p class="menu-card__desc">Caldo concentrado con choros, cangrejo, camarones y almejas. Reconfortante y potente.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">S/ 35</span>
+            <span class="badge">Nuevo</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Bebidas -->
+    <div class="menu__grid" id="tab-bebidas" role="tabpanel">
+      <article class="menu-card">
+        <div class="menu-card__img-wrap">
+          <img class="menu-card__img" src="img/chicha.jpg" alt="Chicha Morada" />
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__name">Chicha Morada</h3>
+          <p class="menu-card__desc">Preparada artesanalmente con maíz morado, membrillo, clavo de olor y canela. Receta de la abuela.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">S/ 8</span>
+            <span class="badge">★ Favorito</span>
+          </div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <div class="menu-card__img-wrap">
+          <img class="menu-card__img" src="img/sour.jpg" alt="Maracuyá Sour" />
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__name">Maracuyá Sour</h3>
+          <p class="menu-card__desc">Pisco quebranta, jugo de maracuyá fresco y espuma de clara. Refrescante y 100% peruano.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">S/ 18</span>
+            <span class="badge">Nuevo</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="galeria" id="galeria">
+    <span class="tag tag--light">✦ Galería</span>
+    <h2 class="section-title section-title--light">Un vistazo a nuestra <em>experiencia</em></h2>
+    <div class="divider"></div>
+    <div class="galeria__grid">
+      <!--
+        IMÁGENES: coloca tus fotos en img/galeria-1.jpg hasta galeria-5.jpg
+        Las URLs de Unsplash son temporales para la demo
+      -->
+      <div class="galeria__item galeria__item--large">
+        <img src="img/galeria-1.jpg"
+             onerror="this.src='https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?w=800&q=80&auto=format&fit=crop'"
+             alt="Plato estrella" />
+      </div>
+      <div class="galeria__item">
+        <img src="img/galeria-2.jpg"
+             onerror="this.src='https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80&auto=format&fit=crop'"
+             alt="Interior del restaurante" />
+      </div>
+      <div class="galeria__item">
+        <img src="img/galeria-3.jpg"
+             onerror="this.src='https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600&q=80&auto=format&fit=crop'"
+             alt="Cocina" />
+      </div>
+      <div class="galeria__item">
+        <img src="img/galeria-4.jpg"
+             onerror="this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80&auto=format&fit=crop'"
+             alt="Ambiente familiar" />
+      </div>
+      <div class="galeria__item">
+        <img src="img/galeria-5.jpg"
+             onerror="this.src='https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&q=80&auto=format&fit=crop'"
+             alt="Pescado fresco" />
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section class="ubicacion" id="ubicacion">
+    <div class="ubicacion__info">
+      <span class="tag">✦ Encuéntranos</span>
+      <h2 class="section-title">Estamos en el <em>corazón</em> de Huánuco</h2>
+      <div class="divider"></div>
+      <div class="info-item">
+        <div class="info-icon" aria-hidden="true">📍</div>
+        <div>
+          <p class="info-label">Dirección</p>
+          <p class="info-text">Jr. General Prado 456, Centro Histórico<br>Huánuco, Perú</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon" aria-hidden="true">🕐</div>
+        <div>
+          <p class="info-label">Horario</p>
+          <p class="info-text">Lunes a Sábado: 11:00am – 5:00pm<br>Domingos: 10:00am – 4:00pm</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon" aria-hidden="true">📞</div>
+        <div>
+          <p class="info-label">Contacto</p>
+          <p class="info-text">+51 962 345 678<br>rinconmarino@gmail.com</p>
+        </div>
+      </div>
+      <a href="https://wa.me/51962345678" class="btn btn--whatsapp" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.554 4.103 1.524 5.828L.057 23.704a.75.75 0 0 0 .924.924l5.875-1.467A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.498-5.197-1.367l-.373-.217-3.867.965.982-3.8-.236-.388A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Escribir por WhatsApp
+      </a>
+    </div>
+    <div class="ubicacion__mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.5!2d-76.2422!3d-9.9306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTUnNTAuMiJTIDc2wrAxNCczOS45Ilc!5e0!3m2!1ses!2spe!4v1"
+        title="Ubicación El Rincón Marino en Huánuco"
+        allowfullscreen loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- RESERVAS -->
+  <section class="reservas" id="reservas">
+    <div class="reservas__header">
+      <span class="tag tag--light">✦ Reservaciones</span>
+      <h2 class="section-title section-title--light">Reserva tu <em>mesa</em> ahora</h2>
+      <div class="divider"></div>
+      <p class="section-desc section-desc--light">Asegura tu lugar con anticipación. Te confirmamos en menos de 2 horas por WhatsApp.</p>
+    </div>
+    <div class="reservas__inner">
+      <form class="reservas__form" id="reservaForm" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono / WhatsApp</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+51 900 000 000" required />
+          </div>
+          <div class="form-group">
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" required />
+          </div>
+          <div class="form-group">
+            <label for="hora">Hora</label>
+            <select id="hora" name="hora" required>
+              <option value="">Seleccionar</option>
+              <option>11:00 am</option>
+              <option>12:00 pm</option>
+              <option>1:00 pm</option>
+              <option>2:00 pm</option>
+              <option>3:00 pm</option>
+              <option>4:00 pm</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="personas">Número de personas</label>
+            <select id="personas" name="personas" required>
+              <option value="">Seleccionar</option>
+              <option>1 persona</option>
+              <option>2 personas</option>
+              <option>3-4 personas</option>
+              <option>5-8 personas</option>
+              <option>Más de 8</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="ocasion">Ocasión</label>
+            <select id="ocasion" name="ocasion">
+              <option>Sin ocasión especial</option>
+              <option>Cumpleaños</option>
+              <option>Aniversario</option>
+              <option>Reunión de negocios</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group form-group--full">
+            <label for="mensaje">Mensaje adicional (opcional)</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Alergias, preferencias, peticiones especiales..."></textarea>
+          </div>
+          <div class="form-group form-group--full">
+            <button type="submit" class="btn btn--primary btn--block">Confirmar Reserva</button>
+          </div>
+        </div>
+      </form>
+      <aside class="reservas__info">
+        <h3>Horarios de atención</h3>
+        <ul class="horario-list">
+          <li class="horario-item"><span class="horario-dia">Lunes – Viernes</span><span class="horario-hora">11am – 5pm</span></li>
+          <li class="horario-item"><span class="horario-dia">Sábado</span><span class="horario-hora">11am – 5pm</span></li>
+          <li class="horario-item"><span class="horario-dia">Domingo</span><span class="horario-hora">10am – 4pm</span></li>
+          <li class="horario-item"><span class="horario-dia">Feriados</span><span class="horario-hora">10am – 3pm</span></li>
+        </ul>
+        <a href="https://wa.me/51929201444?text=Hola,%20quiero%20reservar%20una%20mesa" class="btn btn--whatsapp" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.554 4.103 1.524 5.828L.057 23.704a.75.75 0 0 0 .924.924l5.875-1.467A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.498-5.197-1.367l-.373-.217-3.867.965.982-3.8-.236-.388A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Reservar por WhatsApp
+        </a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonios" id="testimonios">
+    <div class="testimonios__header">
+      <span class="tag">✦ Lo que dicen</span>
+      <h2 class="section-title">Nuestros <em>clientes</em> hablan</h2>
+      <div class="divider divider--center"></div>
+    </div>
+    <div class="test-grid">
+      <article class="test-card">
+        <div class="test-stars" aria-label="5 estrellas">★★★★★</div>
+        <p class="test-text">El mejor ceviche que he probado en toda la región. El leche de tigre es simplemente espectacular, con el punto exacto de picante. Ya voy cada semana.</p>
+        <div class="test-author">
+          <!-- IMAGEN LOCAL: img/cliente-1.jpg -->
+          <img class="test-avatar"
+               src="img/cliente-1.jpg"
+               onerror="this.src='https://i.pravatar.cc/80?img=12'"
+               alt="María Salcedo" />
+          <div>
+            <p class="test-name">María Salcedo</p>
+            <p class="test-origin">Huánuco</p>
+          </div>
+        </div>
+      </article>
+      <article class="test-card">
+        <div class="test-stars" aria-label="5 estrellas">★★★★★</div>
+        <p class="test-text">Vine con toda mi familia por el cumpleaños de mi papá y la atención fue increíble. El arroz con mariscos es enorme y delicioso. Definitivamente volvemos.</p>
+        <div class="test-author">
+          <img class="test-avatar"
+               src="img/cliente-2.jpg"
+               onerror="this.src='https://i.pravatar.cc/80?img=33'"
+               alt="Carlos Rojas" />
+          <div>
+            <p class="test-name">Carlos Rojas</p>
+            <p class="test-origin">Tingo María</p>
+          </div>
+        </div>
+      </article>
+      <article class="test-card">
+        <div class="test-stars" aria-label="5 estrellas">★★★★★</div>
+        <p class="test-text">Pasé por Huánuco de viaje y este lugar me recomendaron en el hotel. No me decepcionó para nada. El ambiente es familiar y la comida completamente auténtica.</p>
+        <div class="test-author">
+          <img class="test-avatar"
+               src="img/cliente-3.jpg"
+               onerror="this.src='https://i.pravatar.cc/80?img=47'"
+               alt="Rosa Mendoza" />
+          <div>
+            <p class="test-name">Rosa Mendoza</p>
+            <p class="test-origin">Lima</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <span class="tag">✦ Reserva Ahora</span>
+    <h2>¿Listo para vivir la <em>experiencia marina</em>?</h2>
+    <p>Reserva tu mesa hoy y descubre por qué somos el restaurante de mariscos favorito de Huánuco desde hace 25 años.</p>
+    <div class="cta-banner__btns">
+      <a href="#reservas" class="btn btn--primary">Reservar Mesa</a>
+      <a href="https://wa.me/51929201444" class="btn btn--whatsapp" target="_blank" rel="noopener" style="margin-top:0">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.554 4.103 1.524 5.828L.057 23.704a.75.75 0 0 0 .924.924l5.875-1.467A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.498-5.197-1.367l-.373-.217-3.867.965.982-3.8-.236-.388A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Escribir al WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="nav-logo">El <span>Rincón</span> Marino</span>
+        <p>Tradición marina en el corazón de Huánuco. Frescura, sabor y hospitalidad peruana desde 1998.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+51962345678">+51 962 345 678</a></li>
+          <li><a href="mailto:rinconmarino@gmail.com">rinconmarino@gmail.com</a></li>
+          <li><a href="#ubicacion">Jr. General Prado 456, Huánuco</a></li>
+          <li><a href="#">@rinconmarino</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 El Rincón Marino. Todos los derechos reservados.</p>
+      <p>Diseño web por <a href="#">NexvoraSystems</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
